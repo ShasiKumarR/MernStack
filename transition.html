@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            width:200px;
+            height:50px;
+            font-family:verdana;
+            text-align:center;
+            padding-top:20px;
+            border:1px solid black;
+            margin-left:48%;
+            margin-top:22%;
+            background-color:turquoise;
+            transition:all 1s linear 1ms;
+            
+        }
+        p:hover{
+            width:400px;
+            height:150px;
+            
+        }
+
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(116, 16, 16);
+            border:2px solid black;
+            animation: box 2s linear 3s 4 forwards;
+            margin:50%;
+        }
+        
+        @keyframes box{
+            0%{
+                background-color:green;
+            }
+            50%{
+                background-color:blue;
+            }
+            100%{
+                background-color:red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <p>SUBMIT</p>
+    <div> </div>
+   
+</body>
+</html>
