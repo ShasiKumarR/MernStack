@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+       
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'sidebar main-content'
+        'footer footer';
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    grid-area: header;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.content {
+    grid-area: main-content;
+    background-color: #e4e4e4;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">GRID</header>
+        <aside class="sidebar">Sidebar</aside>
+        <main class="content">The CSS Grid Layout, often referred to as "Grid," is a powerful layout system designed to make creating complex web layouts simpler and more efficient. It enables developers to define rows and columns within a container, offering precise control over the placement of items. Unlike traditional layout methods like floats or flexbox, Grid is a two-dimensional system, meaning it can handle both rows and columns simultaneously. This makes it especially useful for building responsive designs, as you can easily adjust the layout based on screen size. By using properties like grid-template-rows, grid-template-columns, and grid-gap, developers can create structured, visually appealing layouts with minimal effort. Grid's ability to align items and control spacing gives designers and developers a level of flexibility and creativity that is unmatched in modern web development.</main>
+        <footer class="footer">THANK YOU</footer>
+    </div>
+</body>
+</html>

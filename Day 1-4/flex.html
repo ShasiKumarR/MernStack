@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Image Gallery</title>
+    
+    <style>
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-family:times new roman;
+    height: max-content;
+    border: 1px solid #333;
+    margin: center;
+    
+}
+       
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1000px;
+    margin: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 10px);
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 1 1 100%;
+    }
+}
+    </style>
+</head>
+<body>
+    
+    <div class="gallery">
+        <h1>GALLERY</h1>
+        <div class="gallery-item"><img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=612x612&w=0&k=20&c=8xbZvMyptEaqMW46diKakhVgkPkAzBi5l7J1yveCZFk=" alt="Image 1"></div>
+        <div class="gallery-item"><img src="https://t3.ftcdn.net/jpg/05/35/47/38/360_F_535473874_OWCa2ohzXXNZgqnlzF9QETsnbrSO9pFS.jpg" alt="Image 2"  height="100%"></div>
+        <div class="gallery-item"><img src="https://img.freepik.com/premium-photo/wide-angle-shot-single-tree-growing-clouded-sky-sunset-surrounded-by-grass_181624-22807.jpg?semt=ais_hybrid" alt="Image 3"></div>
+        <div class="gallery-item"><img src="https://static.vecteezy.com/system/resources/thumbnails/036/226/872/small/ai-generated-nature-landscapes-background-free-photo.jpg" alt="Image 4"></div>
+        <div class="gallery-item"><img src="https://wallpapers.com/images/featured/nature-2ygv7ssy2k0lxlzu.jpg" alt="Image 5"></div>
+        <div class="gallery-item"><img src="https://static.vecteezy.com/system/resources/thumbnails/021/746/785/small_2x/holding-a-tree-in-a-ball-ecology-and-environment-concept-with-generative-ai-photo.jpg" alt="Image 6"></div>
+        
+    </div>
+</body>
+</html>
