@@ -1,0 +1,66 @@
+/* General styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* App container */
+.app {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.counter-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Counter value */
+.counter-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0077ff;
+  margin: 20px 0;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0077ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005bb5;
+}
+
+.btn.reset {
+  background-color: #ff4d4d;
+}
+
+.btn.reset:hover {
+  background-color: #cc0000;
+}
